@@ -44,7 +44,7 @@ export default function Plans() {
   const [period, setPeriod] = useState("Monthly");
 
   return (
-    <section className="w-full max-w-6xl mx-auto py-20 px-2 md:px-6 flex flex-col items-center">
+    <section className="w-full max-w-6xl mx-auto py-12 md:py-20 px-2 md:px-6 flex flex-col items-center">
       <h2 className="text-center text-3xl md:text-5xl text-foreground/90 mb-4">
         Plans & Pricing
       </h2>
@@ -70,14 +70,14 @@ export default function Plans() {
         ))}
       </div>
       {/* Plans Grid */}
-      <div className="relative w-full">
-        <div className="grid grid-cols-1 md:grid-cols-3 w-full rounded-2xl overflow-hidden border border-border shadow-lg bg-white">
+      <div className="max-w-6xl w-full mx-auto px-2 md:px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full rounded-2xl overflow-hidden border border-border shadow-lg bg-white">
           {plans.map((plan, idx) => (
             <div
               key={plan.name}
-              className={`flex flex-col h-full border-t-4 ${plan.border} ${
-                idx !== 0 ? "border-l border-border" : ""
-              }`}
+              className={`flex flex-col min-h-[300px] md:h-full border-t-4 ${
+                plan.border
+              } ${idx !== 0 ? "border-l border-border" : ""}`}
             >
               {/* Header */}
               <div

@@ -3,7 +3,7 @@ import { Announcement } from "../Hero/Announcement";
 
 const Marketing = () => {
   return (
-    <section className="w-full flex flex-col items-center justify-center py-24 px-4">
+    <section className="w-full flex flex-col items-center justify-center py-12 md:py-24 px-2 md:px-4">
       {/* Badge */}
 
       <Announcement
@@ -43,10 +43,10 @@ const Marketing = () => {
         With everything powered by a single platform, you don't have to choose
         just one type of digital product.
       </p>
-      <div className="w-7xl mt-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
+      <div className="max-w-6xl w-full mx-auto mt-10 px-2 md:px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ">
           {/* Services Card */}
-          <div className="bg-background border border-border rounded-xl h-[500px] flex flex-col relative overflow-hidden">
+          <div className="bg-background border border-border rounded-xl min-h-[300px] md:h-[500px] flex flex-col relative overflow-hidden">
             <div className="p-8 pb-2 ">
               <h2 className="text-lg font-semibold mb-2">Services</h2>
               <p className="text-muted-foreground">
@@ -64,7 +64,7 @@ const Marketing = () => {
             </div>
           </div>
           {/* Subscriptions Card */}
-          <div className="bg-background border border-border rounded-xl h-[500px] flex flex-col relative overflow-hidden">
+          <div className="bg-background border border-border rounded-xl min-h-[300px] md:h-[500px] flex flex-col relative overflow-hidden">
             <div className="p-8 ">
               <h2 className="text-lg font-semibold mb-2">Subscriptions</h2>
               <p className="text-muted-foreground">
@@ -83,7 +83,7 @@ const Marketing = () => {
           </div>
 
           {/* Coupons Card */}
-          <div className="bg-background border border-border rounded-xl h-[500px] flex flex-col relative overflow-hidden">
+          <div className="bg-background border border-border rounded-xl min-h-[300px] md:h-[500px] flex flex-col relative overflow-hidden">
             <div className="p-8">
               <h2 className="text-lg font-semibold mb-2">Coupons</h2>
               <p className="text-muted-foreground">
@@ -97,7 +97,7 @@ const Marketing = () => {
             />
           </div>
           {/* Serials Card */}
-          <div className="bg-background border border-border rounded-xl h-[500px] flex flex-col relative overflow-hidden">
+          <div className="bg-background border border-border rounded-xl min-h-[300px] md:h-[500px] flex flex-col relative overflow-hidden">
             <div className="p-8 pb-2 ">
               <h2 className="text-lg font-semibold mb-2">Serials</h2>
               <p className="text-muted-foreground">

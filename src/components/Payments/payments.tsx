@@ -3,7 +3,7 @@ import { Announcement } from "../Hero/Announcement";
 
 const Payments = () => {
   return (
-    <section className="w-full flex flex-col items-center justify-center py-24 px-4">
+    <section className="w-full flex flex-col items-center justify-center py-12 md:py-24 px-2 md:px-4">
       {/* Badge */}
 
       <Announcement
@@ -40,10 +40,10 @@ const Payments = () => {
         <br className="hidden md:block" /> in your bank account, or crypto
         wallet.
       </p>
-      <div className="w-7xl mt-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
+      <div className="max-w-6xl w-full mx-auto mt-10 px-2 md:px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ">
           {/* Payouts Card */}
-          <div className="bg-background border border-border rounded-xl h-full flex flex-col relative overflow-hidden">
+          <div className="bg-background border border-border rounded-xl min-h-[300px] md:h-[500px] flex flex-col relative overflow-hidden">
             <div className="p-8 pb-2 ">
               <h2 className="text-lg font-semibold mb-2">Payouts</h2>
               <p className="text-muted-foreground">
@@ -58,7 +58,7 @@ const Payments = () => {
             <div className="absolute w-[720px] h-[100px] left-[calc(50%-360px)] bottom-[-37px] bg-white blur-[25px] pointer-events-none" />
           </div>
           {/* Gateways Cards*/}
-          <div className="bg-background border border-border rounded-xl  h-full flex flex-col relative overflow-hidden">
+          <div className="bg-background border border-border rounded-xl min-h-[300px] md:h-[500px] flex flex-col relative overflow-hidden">
             <div className="p-8 ">
               <h2 className="text-lg font-semibold mb-2">Gateways</h2>
               <p className="text-muted-foreground">
@@ -75,7 +75,7 @@ const Payments = () => {
             </div>
           </div>
           {/* Fees Card */}
-          <div className="bg-background border border-border rounded-xl h-full flex flex-col relative overflow-hidden">
+          <div className="bg-background border border-border rounded-xl min-h-[300px] md:h-[500px] flex flex-col relative overflow-hidden">
             <div className="p-8">
               <h2 className="text-lg font-semibold mb-2">Fees</h2>
               <p className="text-muted-foreground">
@@ -91,7 +91,7 @@ const Payments = () => {
             <div className="absolute w-[720px] h-[100px] left-[calc(50%-360px)] bottom-[-37px] bg-white blur-[25px] pointer-events-none" />
           </div>
           {/* Paylix Card */}
-          <div className="bg-background border border-border rounded-xl h-full flex flex-col relative overflow-hidden">
+          <div className="bg-background border border-border rounded-xl min-h-[300px] md:h-[500px] flex flex-col relative overflow-hidden">
             <div className="p-8 pb-2 ">
               <h2 className="text-lg font-semibold mb-2">Payouts</h2>
               <p className="text-muted-foreground">

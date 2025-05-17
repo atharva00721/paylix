@@ -3,7 +3,7 @@ import { Announcement } from "../Hero/Announcement";
 
 const FraudShield = () => {
   return (
-    <section className="w-full bg-muted/60 flex flex-col items-center justify-center py-24 px-4">
+    <section className="w-full bg-muted/60 flex flex-col items-center justify-center py-12 md:py-24 px-2 md:px-4">
       {/* Badge */}
 
       <Announcement
@@ -35,10 +35,10 @@ const FraudShield = () => {
         Stop blocking legitimate customers, and start blocking fraudulent
         customers. Your shop is protected all day, all night.
       </p>
-      <div className="w-7xl mt-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
+      <div className="max-w-6xl w-full mx-auto mt-10 px-2 md:px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ">
           {/* Filters Card */}
-          <div className="bg-background border border-border rounded-xl h-[500px] flex flex-col relative overflow-hidden">
+          <div className="bg-background border border-border rounded-xl min-h-[300px] md:h-[500px] flex flex-col relative overflow-hidden">
             <div className="p-8 pb-2 ">
               <h2 className="text-lg font-semibold mb-2">Filters</h2>
               <p className="text-muted-foreground">
@@ -56,7 +56,7 @@ const FraudShield = () => {
             </div>
           </div>
           {/* Block Cards*/}
-          <div className="bg-background border border-border rounded-xl h-[500px] flex flex-col relative overflow-hidden">
+          <div className="bg-background border border-border rounded-xl min-h-[300px] md:h-[500px] flex flex-col relative overflow-hidden">
             <div className="p-8 ">
               <h2 className="text-lg font-semibold mb-2">Block</h2>
               <p className="text-muted-foreground">
@@ -73,7 +73,7 @@ const FraudShield = () => {
             </div>
           </div>
           {/* Auth Card */}
-          <div className="bg-background border border-border rounded-xl h-[500px] flex flex-col relative overflow-hidden">
+          <div className="bg-background border border-border rounded-xl min-h-[300px] md:h-[500px] flex flex-col relative overflow-hidden">
             <div className="p-8">
               <h2 className="text-lg font-semibold mb-2">Auth</h2>
               <p className="text-muted-foreground">
@@ -91,7 +91,7 @@ const FraudShield = () => {
             </div>
           </div>
           {/* Community Card */}
-          <div className="bg-[#FFF7ED] border border-border rounded-xl h-[500px] flex flex-col relative overflow-hidden">
+          <div className="bg-[#FFF7ED] border border-border rounded-xl min-h-[300px] md:h-[500px] flex flex-col relative overflow-hidden">
             <div className="p-8 pb-2 ">
               <h2 className="text-lg font-semibold mb-2">
                 Join Our Community of Enthusiasts
