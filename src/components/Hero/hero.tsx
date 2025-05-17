@@ -5,6 +5,7 @@ import { Announcement } from "./Announcement";
 import { Button } from "@/components/ui/button";
 import Iphone15Pro from "../magicui/iphone-15-pro";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -62,45 +63,40 @@ export function Hero() {
         </div>
       </div>
       {/* Cryptocurrency Transactions Section */}
-      <section className="w-full flex flex-col items-center justify-center  bg-background py-24 ">
-        <h2 className="text-3xl md:text-5xl font-semibold text-primary text-center mb-4">
-          Cryptocurrency Transactions
-        </h2>
-        <p className="text-center text-muted-foreground max-w-2xl mb-10 text-lg md:text-xl">
-          Paylix provides you with the latest technologies, offering you a
-          simple solution to sell your digital goods with cryptocurrencies
-        </p>
-        <div className="flex flex-wrap justify-center gap-4 mb-10">
-          {/* Placeholder icons, replace src with your images later */}
-          {[
-            { alt: "Bitcoin", key: "btc" },
-            { alt: "Tron", key: "trx" },
-            { alt: "Tether", key: "usdt" },
-            { alt: "Litecoin", key: "ltc" },
-            { alt: "Bitcoin Cash", key: "bch" },
-            { alt: "Solana", key: "sol" },
-            { alt: "Ethereum", key: "eth" },
-            { alt: "Shiba Inu", key: "shib" },
-            { alt: "Binance", key: "bnb" },
-          ].map((icon) => (
-            <div
-              key={icon.key}
-              className="w-16 h-16 md:w-20 md:h-20 rounded-xl bg-background shadow flex items-center justify-center border border-border"
-            >
-              {/* Replace with <img src="/path-to-icon.png" alt={icon.alt} className="w-10 h-10 md:w-12 md:h-12" /> */}
-              <span className="text-muted-foreground text-xs text-center">
-                {icon.alt}
-              </span>
-            </div>
-          ))}
+      <div className="container mx-auto max-w-5xl bg-background py-16 mt-26 px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center justify-center text-center">
+          {/* Cryptocurrency Icons */}
+          <div className="overflow-hidden relative w-full">
+            <img 
+              src="/crypto.svg" 
+              alt="Cryptocurrency Icons" 
+              className="w-full max-w-2xl mx-auto"
+            />
+          </div>
+          
+          {/* Heading */}
+          <h2 className="text-4xl font-bold tracking-tight text-foreground mt-8 mb-4">
+            Cryptocurrency Transactions
+          </h2>
+          
+          {/* Description */}
+          <p className="text-lg text-muted-foreground max-w-2xl mb-10">
+            Paylix provides you with the latest technologies, offering you a simple solution to sell your digital goods with cryptocurrencies
+          </p>
+          
+          {/* View Fees Button */}
+          <Button 
+            variant="outline" 
+            className="group border border-gray-200 dark:border-white/[0.08] hover:bg-gray-100 dark:hover:bg-gray-900 font-medium"
+            asChild
+          >
+            <Link href="/fees">
+              View Fees
+              <ArrowRight className="ml-1 size-4 transition-transform group-hover:translate-x-1" />
+            </Link>
+          </Button>
         </div>
-        <Button
-          className="rounded-full bg-background border border-border shadow text-primary font-medium text-lg hover:bg-muted transition"
-          size={"lg"}
-        >
-          View Fees
-        </Button>
-      </section>
+      </div>
     </section>
   );
 }
